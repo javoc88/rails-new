@@ -1,0 +1,10 @@
+<div class="form-group">
+  <%= simple_form_for(@task) do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    <%= f.label :details %>
+    <%= f.text_field :details %>
+    <%= f.check_box :completed %> completed
+    <%= f.submit %>
+  <% end %>
+</div>
